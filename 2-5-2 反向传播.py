@@ -46,6 +46,7 @@ if __name__ == '__main__':
     # 反向传播
     # 构建优化器
     optimizer = optim.SGD(net.parameters(), lr=0.5)
+    # optimizer = optim.Momentum(net.parameters(), lr=0.5)
     # 梯度清零
     optimizer.zero_grad()
     # 反向传播
