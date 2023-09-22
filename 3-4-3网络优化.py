@@ -28,7 +28,7 @@ class ImageClassification(nn.Module):
         self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
 
         # 定义线性层
-        self.linear1 = nn.Linear(128*6*6, 12048)
+        self.linear1 = nn.Linear(128*6*6, 2048)
         self.linear2 = nn.Linear(2048, 2048)
         self.out = nn.Linear(2048, 10)
 
